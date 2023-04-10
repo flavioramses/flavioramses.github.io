@@ -1,4 +1,4 @@
-import anime from "animejs";
+// import anime from "animejs";
 import React, {
   createContext,
   useContext,
@@ -98,11 +98,13 @@ const Home = () => {
         //   section = e;
         // }}
         >
-          <div className="bg-layer bg-layer4"></div>
-          <div className="bg-layer bg-layer3"></div>
-          <div className="bg-layer bg-layer2"></div>
-          <div className="bg-layer bg-layer1"></div>
-          <div className="bg-layer bg-layer0"></div>
+          <div className="background">
+            <div className="bg-layer bg-layer4"></div>
+            <div className="bg-layer bg-layer3"></div>
+            <div className="bg-layer bg-layer2"></div>
+            <div className="bg-layer bg-layer1"></div>
+            <div className="bg-layer bg-layer0"></div>
+          </div>
           {/* <nav>
             <Link to="#projects">{(ES && "Proyectos") || "Projects"}</Link>
             <p>|</p>

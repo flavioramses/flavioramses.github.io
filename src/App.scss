@@ -20,40 +20,6 @@ html {
   scroll-snap-type: y mandatory;
 }
 .Home {
-  .socials {
-    display: grid;
-    width: 100%;
-    justify-content: center;
-    grid-column-gap: 0.6rem;
-    grid-auto-flow: column;
-    & > * {
-      $social-item-height: 2.38rem;
-      &::before {
-        content: "";
-        aspect-ratio: 1/1;
-        display: block;
-        height: $social-item-height;
-        position: absolute;
-
-        border-radius: 50%;
-        background-color: $secondary-color;
-        transition: all 100ms ease-in;
-      }
-      &:hover::before {
-        cursor: pointer;
-        scale: 1.07;
-        transition: all 140ms ease-in;
-        background-color: $light-color;
-      }
-      svg {
-        aspect-ratio: 1/1;
-        fill: $primary-color;
-        position: relative;
-        height: $social-item-height;
-        padding: 0.3rem;
-      }
-    }
-  }
   p {
     font-family: "Syne", sans-serif;
   }
@@ -79,6 +45,7 @@ html {
     font-family: "Tilt Warp", cursive;
     font-size: 50px;
     user-select: none;
+    line-height: 0.9;
   }
   h3 {
     font-family: "Syne", sans-serif;
@@ -99,6 +66,7 @@ html {
       &::before {
         background-color: $primary-color;
       }
+
       position: relative;
       z-index: 10;
       overflow: hidden;
@@ -110,6 +78,42 @@ html {
         0px 5.5px 18.2px rgba(0, 0, 0, 0.147),
         0px 13.3px 43.7px rgba(0, 0, 0, 0.14),
         0px 44px 145px rgba(0, 0, 0, 0.12);
+      .socials {
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-column-gap: 0.6rem;
+        grid-auto-flow: column;
+        margin-top: 1rem;
+
+        & > * {
+          $social-item-height: 2.38rem;
+          &::before {
+            content: "";
+            aspect-ratio: 1/1;
+            display: block;
+            height: $social-item-height;
+            position: absolute;
+
+            border-radius: 50%;
+            background-color: $secondary-color;
+            transition: all 100ms ease-in;
+          }
+          &:hover::before {
+            cursor: pointer;
+            scale: 1.07;
+            transition: all 140ms ease-in;
+            background-color: $light-color;
+          }
+          svg {
+            aspect-ratio: 1/1;
+            fill: $primary-color;
+            position: relative;
+            height: $social-item-height;
+            padding: 0.3rem;
+          }
+        }
+      }
     }
 
     .section-content {

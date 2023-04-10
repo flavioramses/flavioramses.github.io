@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .projects {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -6,9 +6,19 @@
   .wigglyLine {
     display: none;
   }
-  .bg-layer {
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg);
+  .bg-layer4 {
+    background-image: url("media/bg-layers/bg-layer4-alt.svg");
+  }
+  .bg-layer3 {
+    background-image: url("media/bg-layers/bg-layer3-alt.svg");
+  }
+  .bg-layer2 {
+    background-image: url("media/bg-layers/bg-layer2-alt.svg");
+  }
+  .bg-layer1 {
+    background-image: url("media/bg-layers/bg-layer1-alt.svg");
+  }
+  .bg-layer0 {
+    background-image: url("media/bg-layers/bg-layer0-alt.svg");
   }
 }
